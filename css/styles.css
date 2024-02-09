@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Single Day', sans-serif;
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    background-color: #0246388a;
+    width: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+#add-task {
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-task input {
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#add-task button {
+    background-color: #003329;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #faebd7;
+    cursor: pointer;
+}
+
+#add-task button:hover {
+    background-color: #026751;
+}
+
+#add-task button:active {
+    background-color: #038569;
+}
+
+#tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 35px;
+}
+
+.task {
+    height: 50px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, .2);
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: #003329;
+    color: #faebd7;
+}
